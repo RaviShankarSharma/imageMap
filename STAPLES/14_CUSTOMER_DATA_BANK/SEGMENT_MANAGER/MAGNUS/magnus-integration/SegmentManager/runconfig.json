@@ -1,0 +1,19 @@
+{
+    "gatewayURL": {
+        "LOCAL": "http://localhost:8764",
+        "DEV": "http://lpapdnasv05:8764",
+        "QA": "http://lpapqnasv01:8764",
+        "PERF": "http://lpapfnasv01:8764"
+    },
+    "useGatewayEnv": "DEV",
+    "uiContext": "SegmentManager",
+    "usePort": 9200,
+    "authHeaders": {
+        "FIRSTNAME": "Kanoj",
+        "LASTNAME": "Pal",
+        "LANID": "KumKa002",
+        "EMPL_ID": "1751127",
+        "EMAIL": "Karthik.Kumar@staplescc.com",
+        "GROUPS": "cn=InventoryAnalyst,ou=Magnus,ou=Groups,dc=staples,dc=com^cn=MagnusPlanner,ou=Magnus,ou=Groups,dc=staples,dc=com^cn=MagnusManager,ou=Magnus,ou=Groups,dc=staples,dc=com"
+    }
+}

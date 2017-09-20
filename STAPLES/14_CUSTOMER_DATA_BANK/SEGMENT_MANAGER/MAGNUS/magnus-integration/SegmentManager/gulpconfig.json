@@ -1,0 +1,80 @@
+{
+  "sourcePath": "src/",
+  "webappPath": "../src/main/webapp",
+  "releasePath": {
+    "root": "dist",
+    "js": "dist/js",
+    "css": "dist/css"
+  },
+  "sources": {
+    "html": "src/**/*.html",
+    "json": "src/**/*.json",
+    "image": "src/**/*.{png,jpg,gif,jpeg}",
+    "font": "src/**/*.{ttf,woff,woff2,eof,svg,eot}",
+    "componentFonts": "bower_components/**/*.{ttf,woff,woff2,eof,svg,eot}"
+  },
+  "replacer": {
+    "bootstrapFont": {
+      "old": "../src/fonts",
+      "new": "../fonts"
+    }
+  },
+  "fileName": {
+    "vendorJs": "vendor.js",
+    "js": "all.js",
+    "jsMin": "all.min.js",
+    "css": "all.css",
+    "cssMin": "all.min.css"
+  },
+  "files": {
+    "cssfiles": [
+      "bower_components/ui-select/dist/select.min.css",
+      "bower_components/ng-notify/dist/ng-notify.min.css",
+      "bower_components/angular-bootstrap/ui-bootstrap-csp.css",
+      "src/**/*.css"
+    ],
+
+    "testJsLibs": [
+      "bower_components/angular-mocks/angular-mocks.js"
+    ],
+    "testFiles": [
+      "test/**/*.spec.js"
+    ],
+
+    "templateFiles": "src/**/*.tpl",
+
+    "vendorJsFiles": [
+      "bower_components/jquery/dist/jquery.min.js",
+      "bower_components/modernizer/modernizr.js",
+      "bower_components/lodash/lodash.min.js",
+      "bower_components/bootstrap/dist/js/bootstrap.min.js",
+      "bower_components/angular/angular.min.js",
+      "bower_components/angular-cookies/angular-cookies.min.js",
+      "bower_components/angular-sanitize/angular-sanitize.min.js",
+      "bower_components/angular-translate/angular-translate.min.js",
+      "bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js",
+      "bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js",
+      "bower_components/angular-dynamic-locale/tmhDynamicLocale.min.js",
+      "bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js",
+      "bower_components/angular-ui-router/release/angular-ui-router.min.js",
+      "bower_components/angular-bootstrap/ui-bootstrap-tpls.js",
+      "bower_components/restangular/dist/restangular.min.js",
+      "bower_components/ui-select/dist/select.min.js",
+      "bower_components/moment/min/moment.min.js",
+      "bower_components/ng-notify/dist/ng-notify.min.js",
+      "bower_components/ng-idle/angular-idle.min.js",
+      "bower_components/moment-duration-format/lib/moment-duration-format.js",
+      "bower_components/angular-http-auth/src/http-auth-interceptor.js",
+      "bower_components/html5shiv/dist/html5shiv.min.js",
+      "bower_components/es5-shim/es5-shim.min.js",
+      "bower_components/moment-timezone/builds/moment-timezone-with-data.min.js"
+    ],
+    "jsfiles": [
+      "src/libs/*.js",
+      "src/app.js",
+      "src/util.js",
+      "src/config.js",
+      "src/dashboard/**/*.js"
+    ]
+  }
+}

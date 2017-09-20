@@ -1,0 +1,59 @@
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+			 aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+			</button>
+			<div class="navbar-header">
+				<a class="navbar-brand" style="cursor: pointer;">
+					<span><img src="images/logo.png" style="margin-top: -6px;" height="20"/></span>&nbsp; - &nbsp;
+					<span style="top:14%; font-size:22px;color:#eeeeee"><b>Segment</b>Manager</span>
+				</a>
+			</div>
+		</div>
+
+		<script type="text/ng-template" id="treeMenu">
+			<a ui-sref="{{menu.state}}" class="dropdown-toggle" data-toggle="dropdown">
+				<span>
+					<span class="{{menu.glyphiconClass}}"></span>
+					<span class="hidden-tablet" style="text-transform: capitalize;">{{menu.name}}</span> 
+					<b ng-show="(menuItems | filter:{parent : menu.state}).length > 0" class="caret"></b>
+				</span>
+			</a>
+			<ul class="dropdown-menu" ng-show="(menuItems | filter:{parent : menu.state}).length > 0">
+				<li ng-repeat="menu in menuItems | orderBy:'order' | filter:{parent : menu.state}">
+					<a ui-sref="{{menu.state}}">
+                        <span class="{{menu.glyphiconClass}}"></span> &nbsp;<span style="text-transform: capitalize;">{{menu.name}}</span>
+                    </a>
+				</li>
+			</ul>
+		</script>
+
+		<div id="navbar" class="navbar-collapse collapse" ng-switch="authenticated">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown">
+						<span class="glyphicon glyphicon-user"></span> 
+						Hey {{account.firstName}} <b class="caret"> </b>
+					</a>
+					<ul class="dropdown-menu" role="menu">
+						<li ng-switch-when="true" class="dropdown pointer">
+							<a target="_blank" href="logout.com"> 
+								<span class="glyphicon glyphicon-log-out"></span> 
+								<span>Logout</span>
+							</a>
+						</li>
+						<li class="logout-style">
+							<magnus-ng-auth-logout></magnus-ng-auth-logout>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+

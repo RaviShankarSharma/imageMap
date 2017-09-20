@@ -1,0 +1,50 @@
+{
+    "global": {
+        "title": "SM",
+        "browsehappy": "You are using an <strong>outdated</strong> browser. Please <a href=\"http://browsehappy.com/?locale=en\">upgrade your browser</a> to improve your experience.",
+        "menu": {
+            "home": "Home",
+            "account": {
+                "main": "Account",
+                "settings": "Settings",
+                "password": "Password",
+                "sessions": "Sessions",
+                "tracker": "User tracker",
+                "metrics": "Metrics",
+                "logs": "Logs",
+                "audits": "Audits",
+                "login": "Log In",
+                "logout": "Log out",
+                "apidocs": "API"
+            },
+            "admin": "Administration",
+            "language": "Language",
+            "help": {
+                "title": "Help",
+                "userManual": "For support documentation, please visit the <a href='https://ussicorp5.sharepoint.com/sites/Projects/Magnus/SitePages/Home.aspx' target='_blank'>Magnus Support SharePoint site</a>",
+                "contactSupport": "Contact <a href='mailto:MagnusPromoSupport@Staples.com'>MagnusPromoSupport@Staples.com </a> if you are having issue with the EPP product."
+            }
+        },
+        "language": {
+            "da": "Danish",
+            "en": "English",
+            "fr": "French",
+            "de": "German",
+            "pl": "Polish"
+        }
+    },
+    "main": {
+        "title": "Welcome to Enterprise Promo Platform",
+        "subtitle": "Enterprise Merchandising Platform",
+        "question": "If you have any question, please contact support!",
+        "logged": {
+            "message": "Hello {{username}}, you are logged in as a {{userrole}}!",
+            "authenticated": "Please log in to get started.."
+        }
+    },
+    "errors": {
+        "title": "Error page!",
+        "403": "You are not authorized to access the page."
+    },
+    "footer": "Copyright &copy {{year}} Staples Inc."
+}
